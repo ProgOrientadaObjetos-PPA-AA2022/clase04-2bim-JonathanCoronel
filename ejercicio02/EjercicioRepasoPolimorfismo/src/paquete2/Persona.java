@@ -10,31 +10,39 @@ package paquete2;
  * @author reroes
  */
 public class Persona {
-    
+
     private String nombre;
-    private String cedula;
+    private String apellido;
     private int edad;
-    
-    public Persona(String n, String ide, int ed){
+
+    public Persona(String n, String ide, int ed) {
         nombre = n;
-        cedula = ide;
+        apellido = ide;
         edad = ed;
     }
-    
-    public void establecerNombre(String n){
+
+    public void establecerNombre(String n) {
         nombre = n;
     }
-    
-    public void establecerCedula(String n){
-        cedula = n;
+
+    public void establecerCedula(String n) {
+        apellido = n;
     }
-    
-    public String obtenerNombre(){
+
+    public void establecerEdad(int ed) {
+        edad = ed;
+    }
+
+    public String obtenerNombre() {
         return nombre;
     }
-    
-    public String obtenerCedula(){
-        return cedula;
+
+    public String obtenerCedula() {
+        return apellido;
     }
-    
+
+    public int obtenerEdad() {
+        return edad;
+    }
+
 }
