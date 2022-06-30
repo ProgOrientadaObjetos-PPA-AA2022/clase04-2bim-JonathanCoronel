@@ -7,7 +7,7 @@ package paquete02;
 
 /**
  *
- * @author reroes
+ * @author JonathanCoronel
  */
 public abstract class Automovil {
 

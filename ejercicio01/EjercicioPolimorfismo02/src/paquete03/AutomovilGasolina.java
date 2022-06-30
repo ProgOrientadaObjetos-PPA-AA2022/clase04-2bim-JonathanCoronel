@@ -9,7 +9,7 @@ import paquete02.Automovil;
 
 /**
  *
- * @author reroes
+ * @author JonathanCoronel
  */
 public class AutomovilGasolina extends Automovil {
 
@@ -17,11 +17,10 @@ public class AutomovilGasolina extends Automovil {
     private double costoGalon;
     private double iva;
 
-    public AutomovilGasolina(double numGa, double costoGa, double iv, String nombrePro, String pla) {
+    public AutomovilGasolina(String nombrePro, String pla, double numGa, double costoGa) {
         super(nombrePro, pla);
         numGalones = numGa;
         costoGalon = costoGa;
-        iva = iv;
     }
 
     public void establecerNumGalones(double numg) {
@@ -57,9 +56,9 @@ public class AutomovilGasolina extends Automovil {
     public String toString() {
         String cadena = String.format("Auto de Gasolina\nPropietario: "
                 + "%s\nMatricula: %s\nNumero de Galones: %.0f\n"
-                + "Costo de galon: %.1f\nIva: %d \nValor a Cancelar",
+                + "Costo de galon: %.1f\nIva: %.2f \nValor a Cancelar: %.1f\n",
                 nombrePropietario, placa, numGalones,
-                costoGalon, costoGalon, iva, valorCancelar);
+                costoGalon, iva, valorCancelar);
         return cadena;
     }
 

@@ -10,23 +10,18 @@ import paquete04.AutomovilDiesel;
 
 /**
  *
- * @author reroes
+ * @author JonathanCoronel
  */
 public class Ejecutor {
 
     public static void main(String[] args) {
-        AutomovilGasolina auto1 = new AutomovilGasolina("Jonathan","LBB0711",20,3);
+        AutomovilGasolina auto1 = new AutomovilGasolina("Jonathan", "LBB0711", 20, 3);
         auto1.establecerIva();
         auto1.calcularValorCancelar();
         System.out.println(auto1);
-        AutomovilDiesel auto2 = new AutomovilDiesel();
-        auto2.establecerNombrePropietario("Pablo");
-        auto2.establecerPlaca("HSD4311");
-        auto2.establecerNumLitros(20);
-        auto2.establecerCostoLitro(2);
-        auto2.establecerDescuento();
+        AutomovilDiesel auto2 = new AutomovilDiesel("Pablo","HSD4311",20,2,10);
         auto2.calcularValorCancelar();
+        System.out.println(auto2);
 
-        
     }
 }
